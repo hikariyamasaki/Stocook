@@ -93,3 +93,36 @@ textarea {
   color: #808080;
   border-bottom: 1px dotted #808080;
 }
+
+.main {
+  margin-left: 20px;
+}
+
+.btn {
+
+  padding: 10px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.meat {
+  background-color: red;
+}
+
+.vegetables {
+  background-color: #008000;
+}
+
+.fish {
+  background-color: #0000ff;
+}
+
+.others {
+  background-color: #a9a9a9;
+}
+
+.select {
+  padding-bottom: 10px;
+}

@@ -7,7 +7,7 @@
  </head>
 <body>
   <h1>SAMPLE</h1>
-  <div class="container">
+  <div class="main">
     <form action="sent.php" method="post">
       <p>食材：<input type="text" name="vegetable"></p>
       <p>賞味・消費期限：<textarea name="memo"></textarea></p>
