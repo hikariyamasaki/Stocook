@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="meat.css">
+  <script type="text/javascript" src="add_meat.js"></script>
+ </head>
+<body>
+  <div class="main">
+    <h1>お肉の在庫</h1>
+   <form name="input_area">
+    <p>食材：<input type="text" name="food_name"></p>
+    <p>量：<input type="text" name="amount"></textarea></p>
+    <input class="add_btn" type="button" value="add" onclick="okPushed()">
+  </form>
+  </div>
+  <table id="table_meat" border="1">
+    <tr>
+      <th>種類</th><th>量(g)</th>
+    </tr>
+    <tr>
+      <th>牛ミンチ</th><th>300(g)</th>
+    </tr>
+    <tr>
+      <th>鶏もも</th><th>300(g)</th>
+    </tr>
+    <tr>
+      <th>豚肩ロース</th><th>300(g)</th>
+    </tr>
+  </table>
+</body>
+</html>
