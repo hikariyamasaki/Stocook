@@ -1,0 +1,79 @@
+table {
+  margin-top: 10px;
+}
+
+/* ▼(A)表示領域全体 */
+div.tabbox {
+  padding: 0px;
+  width: 90%;
+  margin: auto;
+}
+
+/* ▼(B)タブ部分 */
+p.tabs {
+  margin: 0px;
+  padding: 0px;
+}
+
+p.tabs a {
+   /* ▼(B-2)リンクをタブのように見せる */
+   text-decoration: none;
+   display: block; width: 5em; float: left;
+   margin: 0px 1px 0px 0px; padding: 3px;
+   text-align: center;
+   border-radius: 12px 12px 0px 0px; /* 角を丸くする */
+}
+/* ▼(B-3)各タブの配色 */
+p.tabs a.tab1 {
+  background-color: #ff4500;
+  color: #FFFFFF;
+}
+
+p.tabs a.tab2 {
+  background-color: #006400;
+  color: #FFFFFF;
+}
+p.tabs a.tab3 {
+  background-color: #0000ff;
+  color: #FFFFFF;
+}
+p.tabs a.tab4 {
+  background-color: #a9a9a9;
+   color: #FFFFFF;
+ }
+
+
+ p.tabs a:hover {
+  color: #FFFFFF;
+  background-color: #fa8072;
+}
+
+
+/* ▼(C)タブ中身のボックス */
+div.tab {
+   /* ▼(C-2)ボックス共通の装飾 */
+   height: 150px;
+   overflow: auto;
+   clear: left;
+   color: #000000;
+}
+/* ▼(C-3)各ボックスの配色 */
+div#tab1 {
+  border: 2px solid #ffe4e1;
+  background-color: #ffe4e1;
+}
+div#tab2 {
+  border: 2px solid #66cdaa;
+  background-color: #66cdaa;
+}
+div#tab3 {
+  border: 2px solid #87ceeb;
+  background-color: #87ceeb;
+}
+div#tab4 {
+  border: 2px solid #dcdcdc;
+  background-color: #dcdcdc;
+}
+div.tab p {
+  margin: 0.5em;
+}

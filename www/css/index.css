@@ -68,7 +68,7 @@ p.select-type {
   color: white;
   display: inline-block;
   border-radius: 4px;
-  width: 40%;
+  width: 15%;
   margin-bottom: 10px;
   background-color: #fffafa;
 }
@@ -88,6 +88,8 @@ a.fish {
 a.others {
   color: #a9a9a9;
 }
+
+
 
 h2.stocks {
   color: white;
@@ -131,4 +133,13 @@ a.recipe-title {
   font-size: 40px;
   margin-left: 10px;
   text-decoration:　none;
+}
+
+.add-area {
+  margin: auto;
+  color: #cf2121;
+  background-color: #ffe4e1;
+  width: 90%;
+  height: 150px;
+  margin-bottom: 10px;
 }
