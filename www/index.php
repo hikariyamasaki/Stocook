@@ -50,20 +50,39 @@
          </p>
          <div id="tab1" class="tab">
            <p>
-             <table id="table_meat" border="1">
-                 <th>牛ミンチ</th><th>300(g)</th>
+             <table class="meats">
+               <tr>
+                 <th scope="row">豚バラ</th>
+                 <td>300g</td>
                </tr>
                <tr>
-                 <th>鶏もも</th><th>300(g)</th>
+                 <th scope="row">豚ロース</th>
+                 <td>50g</td>
                </tr>
                <tr>
-                 <th>豚肩ロース</th><th>300(g)</th>
+                 <th scope="row">牛ミンチ</th>
+                 <td>200g</td>
                </tr>
-             </table>
+            </table>
            </p>
          </div>
          <div id="tab2" class="tab">
-           <p>(タブ2の中身。HTMLタグも記述可能です。)</p>
+           <a>
+             <table class="type04">
+               <tr>
+                 <th scope="row">項目名</th>
+                 <td>内容がはいります。</td>
+               </tr>
+               <tr>
+                 <th scope="row">項目名</th>
+                 <td>内容がはいります。</td>
+               </tr>
+               <tr>
+                 <th scope="row">項目名</th>
+                 <td>内容がはいります。</td>
+               </tr>
+            </table>
+           </p>
         </div>
         <div id="tab3" class="tab">
            <p>(タブ3の中身。いくつでも増やせます。)</p>

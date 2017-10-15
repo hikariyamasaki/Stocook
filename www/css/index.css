@@ -57,7 +57,7 @@ p.select-type {
 
 .select {
     background-color: #ff69b4;
-    height: 500px;
+    height: 1000px;
     width: 48%;
     float: left;
     margin-left: 1%;
@@ -88,8 +88,6 @@ a.fish {
 a.others {
   color: #a9a9a9;
 }
-
-
 
 h2.stocks {
   color: white;
@@ -138,7 +136,7 @@ a.recipe-title {
 .add-area {
   margin: auto;
   color: #cf2121;
-  background-color: #ffe4e1;
+  background-color: #FFFFFF;
   width: 90%;
   height: 150px;
   margin-bottom: 10px;
