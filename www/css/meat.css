@@ -48,7 +48,7 @@ p.tabs a.tab4 {
 /* ▼(C)タブ中身のボックス */
 div.tab {
    /* ▼(C-2)ボックス共通の装飾 */
-   height: 150px;
+   height: 500px;
    overflow: auto;
    clear: left;
    color: #000000;

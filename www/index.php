@@ -51,18 +51,12 @@
          <div id="tab1" class="tab">
            <p>
              <table class="meats">
-               <tr>
-                 <th scope="row">豚バラ</th>
-                 <td>300g</td>
-               </tr>
-               <tr>
-                 <th scope="row">豚ロース</th>
-                 <td>50g</td>
-               </tr>
-               <tr>
-                 <th scope="row">牛ミンチ</th>
-                 <td>200g</td>
-               </tr>
+               <?php
+                require 'test.php';
+                for ($i=0; $i < 3; $i++) {
+                  echo "<tr><th scope=\"row\">" .$meat_name[$i]["name"] . "</th><td>" .$meat_name[$i]["value"] . "</td></tr>";
+                }
+               ?>
             </table>
            </p>
          </div>
