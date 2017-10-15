@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title></title>
-  <link rel="stylesheet" type="text/css" href="meat.css">
+  <link rel="stylesheet" type="text/css" href="./css/meat.css">
   <script type="text/javascript" src="add_meat.js"></script>
  </head>
 <body>
@@ -29,5 +29,39 @@
       <th>豚肩ロース</th><th>300(g)</th>
     </tr>
   </table>
+  <script type="text/javascript">
+  //選択した1つのタブだけを表示し、他のタブは非表示にする
+  function ChangeTab(tabname) {
+     // 全部消す
+     document.getElementById('tab1').style.display = 'none';
+     document.getElementById('tab2').style.display = 'none';
+     document.getElementById('tab3').style.display = 'none';
+     // 指定箇所のみ表示
+     document.getElementById(tabname).style.display = 'block';
+  }
+  </script>
+
+  <div class="tabbox">
+    <p class="tabs">
+      <a href="#tab1" class="tab1" onclick="ChangeTab('tab1'); return false;">タブ１</a>
+      <a href="#tab2" class="tab1" onclick="ChangeTab('tab2'); return false;">タブ2</a>
+      <a href="#tab3" class="tab1" onclick="ChangeTab('tab3'); return false;">タブ3</a>
+    </p>
+    <div id="tab1" class="tab">
+      <p>
+        たぶの中身
+      </p>
+    </div>
+    <div id="tab2" class="tab">
+      <p>(タブ2の中身。HTMLタグも記述可能です。)</p>
+   </div>
+   <div id="tab3" class="tab">
+      <p>(タブ3の中身。いくつでも増やせます。)</p>
+   </div>
+   <script type="text/javascript">
+   // デフォルトのタブを選択
+   ChangeTab('tab1');
+   </script>
+  </div>
 </body>
 </html>
