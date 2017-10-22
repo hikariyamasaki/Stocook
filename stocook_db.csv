@@ -1,1 +1,1 @@
-﻿id,name,category,amount,unit,date1,鶏胸肉,meats,2,枚,2017/10/312,鶏モモ肉,meats,2,枚,2017/10/313,キャベツ,vegetables,0.5,玉,2017/10/314,トマト,vegetables,1,玉,2017/10/315,鯖,fishes,2,尾,2017/10/316,卵,others,12,個,2017/10/31
+﻿id,name,category,"amount","unit","date"1,鶏胸肉,"meats","2",枚,"2017/10/31"2,鶏モモ肉,"meats","2",枚,"2017/10/31"3,キャベツ,"vegetables","0.5",玉,"	2017/10/31"4,トマト,"vegetables","1",玉,"2017/10/31"5,鯖,"fishes","2",尾,"2017/10/31"6,卵,"others","12",個,"2017/10/31"
