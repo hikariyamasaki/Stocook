@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title></title>
   <link rel="stylesheet" type="text/css" href="./css/index.css">
-  <link rel="stylesheet" type="text/css" href="./css/meat.css">
+  <link rel="stylesheet" type="text/css" href="./css/tabs.css">
  </head>
 <body>
     <h1>Stocook!</h1>
@@ -61,28 +61,40 @@
            </p>
          </div>
          <div id="tab2" class="tab">
-           <a>
-             <table class="type04">
-               <tr>
-                 <th scope="row">項目名</th>
-                 <td>内容がはいります。</td>
-               </tr>
-               <tr>
-                 <th scope="row">項目名</th>
-                 <td>内容がはいります。</td>
-               </tr>
-               <tr>
-                 <th scope="row">項目名</th>
-                 <td>内容がはいります。</td>
-               </tr>
+           <p>
+             <table class="vegetables">
+               <?php
+                require 'test.php';
+                for ($i=0; $i < 3; $i++) {
+                  echo "<tr><th scope=\"row\">" .$vegetable_name[$i]["name"] . "</th><td>" .$vegetable_name[$i]["value"] . "</td></tr>";
+                }
+               ?>
             </table>
            </p>
         </div>
         <div id="tab3" class="tab">
-           <p>(タブ3の中身。いくつでも増やせます。)</p>
+           <p>
+             <table class="fishes">
+               <?php
+                  require 'test.php';
+                  for ($i=0; $i < 3; $i++) {
+                    echo "<tr><th scope=\"row\">" .$fish_name[$i]["name"] . "</th><td>" .$fish_name[$i]["value"] . "</td></tr>";
+                }
+                ?>
+              </table>
+           </p>
         </div>
         <div id="tab4" class="tab">
-           <p>(タブ4の中身。いくつでも増やせます。)</p>
+           <p>
+             <table class="others">
+               <?php
+                  require 'test.php';
+                  for ($i=0; $i < 3; $i++) {
+                    echo "<tr><th scope=\"row\">" .$other_name[$i]["name"] . "</th><td>" .$other_name[$i]["value"] .  "</td></tr>";
+                  }
+                ?>
+              </table>
+           </p>
         </div>
         <script type="text/javascript">
         // デフォルトのタブを選択

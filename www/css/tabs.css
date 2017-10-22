@@ -74,21 +74,92 @@ div.tab p {
   margin: 0.5em;
 }
 
+table {
+  background-color: #FFFFFF;
+}
+
 table.meats {
     border-collapse: separate;
-    border-spacing: 1px;
+    border-spacing: 0px;
     text-align: left;
     line-height: 1.5;
     border-top: 1px solid #ccc;
 }
 table.meats th {
-    width: 150px;
+    width: 80%;
     padding: 10px;
     font-weight: bold;
     vertical-align: top;
     border-bottom: 1px solid #ccc;
 }
+
 table.meats td {
+    width: 350px;
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+}
+
+table.vegetables {
+    border-collapse: separate;
+    border-spacing: 0px;
+    text-align: left;
+    line-height: 1.5;
+    border-top: 1px solid #ccc;
+}
+table.vegetables th {
+    width: 80%;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+}
+
+table.vegetables td {
+    width: 350px;
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+}
+
+table.fishes {
+    border-collapse: separate;
+    border-spacing: 0px;
+    text-align: left;
+    line-height: 1.5;
+    border-top: 1px solid #ccc;
+}
+table.fishes th {
+    width: 80%;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+}
+
+table.fishes td {
+    width: 350px;
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+}
+
+table.others {
+    border-collapse: separate;
+    border-spacing: 0px;
+    text-align: left;
+    line-height: 1.5;
+    border-top: 1px solid #ccc;
+}
+table.others th {
+    width: 80%;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+}
+
+table.others td {
     width: 350px;
     padding: 10px;
     vertical-align: top;
