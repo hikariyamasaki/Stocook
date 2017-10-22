@@ -1,15 +1,17 @@
 <?php
 require './model/model.php';
-$stoks_db = new StocksModel();
-$sql = "SELECT * FROM `stocks` WHERE category='vegetables';";
 
-$result = $stoks_db->query($sql);
+function getCategory($category){
 
-if ($result["status"]) {
-  foreach($result["result"] as $row) {
-    echo $row["name"];
+  $stoks_db = new StocksModel();
+  $sql = "SELECT * FROM `stocks` WHERE category='".$category."';";
+
+  $result = $stoks_db->query($sql);
+
+  if ($result["status"]) {
+    return $result["result"];
+  }else {
+    echo $result["error"];
   }
-}else {
-  echo $result["error"];
 }
  ?>
