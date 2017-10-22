@@ -14,5 +14,21 @@ services:
       - ../www:/var/www/html
     depends_on:
       - mysql
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOST=mysql
+      - PMA_USER=root
+      - PMA_PASSWORD=pass
+    links:
+      - mysql
+    ports:
+       - 8081:80
+    volumes:
+       - /sessions
+    depends_on:
+      - mysql
+      - php
 volumes:
   db:
