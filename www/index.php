@@ -48,54 +48,10 @@
            <a href="#tab3" class="tab3" onclick="ChangeTab('tab3'); return false;">魚</a>
            <a href="#tab4" class="tab4" onclick="ChangeTab('tab4'); return false;">その他</a>
          </p>
-         <div id="tab1" class="tab">
-           <p>
-             <table class="meats">
-               <?php
-                require 'test.php';
-                for ($i=0; $i < 3; $i++) {
-                  echo "<tr><th scope=\"row\">" .$meat_name[$i]["name"] . "</th><td>" .$meat_name[$i]["value"] . "</td></tr>";
-                }
-               ?>
-            </table>
-           </p>
-         </div>
-         <div id="tab2" class="tab">
-           <p>
-             <table class="vegetables">
-               <?php
-                require 'test.php';
-                for ($i=0; $i < 3; $i++) {
-                  echo "<tr><th scope=\"row\">" .$vegetable_name[$i]["name"] . "</th><td>" .$vegetable_name[$i]["value"] . "</td></tr>";
-                }
-               ?>
-            </table>
-           </p>
-        </div>
-        <div id="tab3" class="tab">
-           <p>
-             <table class="fishes">
-               <?php
-                  require 'test.php';
-                  for ($i=0; $i < 3; $i++) {
-                    echo "<tr><th scope=\"row\">" .$fish_name[$i]["name"] . "</th><td>" .$fish_name[$i]["value"] . "</td></tr>";
-                }
-                ?>
-              </table>
-           </p>
-        </div>
-        <div id="tab4" class="tab">
-           <p>
-             <table class="others">
-               <?php
-                  require 'test.php';
-                  for ($i=0; $i < 3; $i++) {
-                    echo "<tr><th scope=\"row\">" .$other_name[$i]["name"] . "</th><td>" .$other_name[$i]["value"] .  "</td></tr>";
-                  }
-                ?>
-              </table>
-           </p>
-        </div>
+         <?php
+         require "tabs.php";
+         echo $table;
+          ?>
         <script type="text/javascript">
         // デフォルトのタブを選択
         ChangeTab('tab1');
